@@ -10,11 +10,12 @@
     "react-dom": "^17.0.2",
     "react-pdf": "^5.6.0",
     "react-scripts": "4.0.3",
+    "serve": "^14.2.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm i",
+    "build": "npm install -g serve && npm i && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
