@@ -8,7 +8,7 @@ function App() {
   const [file, setFile] = useState();
   console.log(process.env);
   const getFileData = () => {
-    fetch(process.env.REACT_APP_SERVER_ADDRESS + "/getPdfData?fileUrl=" + url)
+    fetch("https://pdfviewerserver.onrender.com/getPdfData?fileUrl=" + url)
       .then((res) => res.blob())
       .then((base64) => setFile(base64));
   };
